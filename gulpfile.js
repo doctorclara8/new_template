@@ -33,10 +33,9 @@ gulp.task('scripts', function () {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/popper.js/dist/umd/popper.js',
 		'app/libs/bootstrap/dist/js/bootstrap.js',
-		'app/libs/mmenu/dist/mmenu.js',
 		'app/js/common.js'
 	])
-		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
+		.pipe(concat('libs.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл
 		.pipe(gulp.dest('app/js')) // Выгружаем в папку app/js
 		.pipe(browserSync.reload({ stream: true }));

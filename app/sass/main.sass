@@ -21,30 +21,134 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	background: #333
+.h2,.h3,.h4
+	line-height: 1.4
 
+	text-transform: uppercase
+.h6,h5
+	font-weight: 800
+.button
+	text-transform: uppercase
+	font-weight: bold
+	display: inline-block
+.dark
+	background-color: $main
+	color: #fff
+.light
+	background-color: #fff
+	opacity: 0.8
+	color: $main
 .header
-	height: 100vh
 	min-height: 700px
-	a
-		text-transform: uppercase
-		letter-spacing: .025em
-		color: #fff
-		font-size: 35px
-		transition: .3s ease
-		&:hover
+	background: url('../img/bg1.png') no-repeat
+	background-size: cover
+	nav
+		a
+			text-transform: uppercase
+			letter-spacing: .025em
+			color: #fff
+			font-size: 35px
+			transition: .3s ease
+
+			&:hover
+				color: $accent
+				text-decoration: none
+	&_main
+		margin: 200px 0
+	&_content
+		padding: 100px
+		text-align: center
+		background-color: rgba(255,255,255 ,.82 )
+	&_logo
+		font-family: 'cookie'
+		font-size: 104px
+		color: $main
+		line-height: .5
+	&_title
+		font-size: 77px
+		color: $accent
+		white-space: nowrap
+	&_parrent
+		display: flex
+		width: 100%
+		height: 100%
+		justify-content: center
+		align-items: center
+	&_button
+		color: $main
+		font-size: 39px
+		background-color: #fff
+		padding: 5px 20px
+.block
+	padding: 60px 0
+	&_text
+		height: 100%
+		display: flex
+		align-items: center
+	.h5
+		font-size: 30px
+	.text
+		margin-top: 30px
+	img
+		max-width: 100%
+		height: auto
+.new
+	padding: 100px 0
+	.text
+		margin-top: 25px
+		font-size: 16.6px
+	.h6
+		font-size: 19px
+	.circle
+		display: inline-block
+		margin-bottom: 25px
+		width: 32px
+		height: 32px
+		border-radius: 50%
+		background-color: $main
+.menu
+	background: url('../img/bg2	.png') no-repeat
+	background-size: cover
+	display: flex
+
+	justify-content: center
+	align-items: center
+	&_content
+		// margin: 100px
+		padding-top: 50px
+		text-align: center
+		background-color: rgba(255,255,255 ,.82 )
+		.h2
+			font-size: 48px
 			color: $accent
-			text-decoration: none
-	// &_text
-	// 	font-size: 100px
-	// 	color: $accent
-	// &_button
-	// &_content
-	// 	margin: auto
-	// &_main
-	// 	display: flex
-	// 	position: relative
-	// 	top: 0
-	// 	height: 100%
+			font-weight: 600
+			line-height: .8
+			span
+				font-family: cookie
+				font-size: 77px
+				color: $main
+				font-weight: 500
+				text-transform: capitalize
+				display: block
+
+		img
+			width: 100%
+			height: auto
+
+	.food
+		&_name
+			font-size: 19px
+			font-weight: 800
+			text-transform: uppercase
+		&_description
+			font-size: 17px
+		&_price
+			font-size: 16px
+			font-weight: 800
+
+.no-gutters
+	padding-right: 0
+	padding-left: 0
 
 .img-responsive
 	display: block

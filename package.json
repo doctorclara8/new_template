@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "dependencies": {
     "bootstrap": "latest",
-    "jquery": "latest"
+    "jquery": "latest",
+    "popper.js": "latest"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

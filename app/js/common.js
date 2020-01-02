@@ -1,13 +1,7 @@
 $(function () {
-	$('#my-menu').mmenu({
-		extensions: ['widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black', "border-none", "position-back",
-			"position-left"]
-	});
-	var api = $('#my-menu').data('mmenu');
-	api.bind('open:finish', function () {
-		$('.hamburger').addClass('is-active');
-	}).bind('close:finish', function () {
-		$('.hamburger').removeClass('is-active');
+	$('.h2').each(function () {
+		var title = $(this);
+		title.html(title.text().replace(/(^\w+)/, '<span>$1</span>'));
 	});
 
 });
