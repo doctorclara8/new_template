@@ -1,0 +1,61 @@
+@import "fonts"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	background: #333
+
+.header
+	height: 100vh
+	min-height: 700px
+	a
+		text-transform: uppercase
+		letter-spacing: .025em
+		color: #fff
+		font-size: 35px
+		transition: .3s ease
+		&:hover
+			color: $accent
+			text-decoration: none
+	// &_text
+	// 	font-size: 100px
+	// 	color: $accent
+	// &_button
+	// &_content
+	// 	margin: auto
+	// &_main
+	// 	display: flex
+	// 	position: relative
+	// 	top: 0
+	// 	height: 100%
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+@import "media" // Всегда в конце

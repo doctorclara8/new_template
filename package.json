@@ -1,0 +1,29 @@
+{
+  "name": "wooder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglifyjs": "latest",
+    "imagemin-pngquant": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
