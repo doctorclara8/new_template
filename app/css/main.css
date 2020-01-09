@@ -36,8 +36,7 @@ body {
   color: #fff; }
 
 .light {
-  background-color: #fff;
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #2a3b40; }
 
 .text {
@@ -53,12 +52,23 @@ body {
   .text_title_s {
     font-size: 30px; }
   .text_title_xs {
-    font-size: 19px; }
+    font-size: 18px; }
+  .text_title_m {
+    font-size: 48px;
+    color: #ad6c12;
+    font-weight: 600;
+    line-height: .8; }
+    .text_title_m span {
+      font-family: cookie;
+      font-size: 77px;
+      color: #2a3b40;
+      font-weight: 500;
+      text-transform: capitalize;
+      display: block; }
   .text_s {
     margin-top: 30px;
     font-size: 18px; }
   .text_xs {
-    margin-top: 25px;
     font-size: 16.6px; }
 
 .header {
@@ -120,6 +130,8 @@ body {
 
 .new {
   padding: 100px 0; }
+  .new .text_xs {
+    margin-top: 25px; }
 
 .circle {
   display: inline-block;
@@ -149,21 +161,9 @@ body {
     padding-top: 50px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.82); }
-    .menu_content .h2 {
-      font-size: 48px;
-      color: #ad6c12;
-      font-weight: 600;
-      line-height: .8; }
-      .menu_content .h2 span {
-        font-family: cookie;
-        font-size: 77px;
-        color: #2a3b40;
-        font-weight: 500;
-        text-transform: capitalize;
-        display: block; }
-    .menu_content img {
-      width: 100%;
-      height: auto; }
+  .menu_img {
+    width: 100%;
+    height: auto; }
   .menu .food_name {
     font-size: 19px;
     font-weight: 800;
@@ -175,7 +175,6 @@ body {
     font-weight: 800; }
 
 .cuisine {
-  background: #d4d8d9;
   height: 100%;
   text-align: center; }
   .cuisine .img {
@@ -190,6 +189,42 @@ body {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
+  .cuisine_menu .menu_item {
+    display: inline;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 60px; }
+
+.new_menu {
+  background: url("../img/bg3.png") no-repeat;
+  background-size: cover;
+  padding-top: 240px; }
+  .new_menu_content {
+    margin-top: 240px;
+    padding: 40px 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.82); }
+    .new_menu_content .h2 {
+      text-align: center;
+      margin-bottom: 20px; }
+    .new_menu_content .h6 {
+      text-transform: uppercase; }
+    .new_menu_content p {
+      margin: 0; }
+  .new_menu .menu_icon {
+    max-width: 70px;
+    height: auto;
+    align: left; }
+  .new_menu .circle_icon {
+    padding: 0 25px;
+    margin-right: 10px;
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    line-height: 85px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff; }
 
 .no-gutters {
   padding-right: 0;
